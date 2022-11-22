@@ -26,7 +26,7 @@ def convert_image(img):
 col1, col2 = st.columns(2)
 
 my_image = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
-alpha_matting = st.sidebar.checkbox("Include alpha matting", value=False)
+alpha_matting = st.sidebar.checkbox("Include alpha matting (can sometimes improve removal)", value=False)
 if alpha_matting:
     alpha_matting_background_threshold = st.sidebar.number_input(
         "Alpha matting background", value=10, min_value=0, max_value=2000, step=1

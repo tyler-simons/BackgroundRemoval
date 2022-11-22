@@ -1,2 +1,3 @@
 # BackgroundRemoval
-Small Streamlit app to help with background removal on images
+
+Upload an image and adjust the settings to remove the background for any image!
