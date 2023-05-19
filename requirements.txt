@@ -32,12 +32,12 @@ imageio==2.22.4
 importlib-metadata==5.0.0
 Jinja2==3.1.2
 jsonschema==4.17.0
-llvmlite==0.39.1
+llvmlite==0.40.0
 MarkupSafe==2.1.1
 mpmath==1.2.1
 multidict==6.0.2
 networkx==2.8.8
-numba==0.56.4
+numba==0.57.0
 numpy==1.23.5
 onnxruntime==1.14.1
 opencv-python-headless==4.6.0.66
