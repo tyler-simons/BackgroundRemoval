@@ -47,7 +47,9 @@ def fix_image(upload):
                 col1.write('Black and White')
                 col1.image(grey_scale)
                 col2.write('Gray Fixed')
-                col2.image(remove(grey_scale))
+                product= remove(grey_scale)
+                col2.image(product)
+                st.sidebar.download_button("Download fixed colored image", convert_image(product), f"{filename}_grey_fixed.png", "image/png")
             else:
                 red_channel, green_channel, blue_channel = image.split()
                 if selected_option == 'red':
