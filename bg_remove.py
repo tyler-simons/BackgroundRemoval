@@ -2,9 +2,6 @@ import streamlit as st
 from rembg import remove
 from PIL import Image
 from io import BytesIO
-import base64
-import webcolors
-import matplotlib.pylab as plt
 
 st.set_page_config(layout="wide", page_title="Image Background Remover")
 
