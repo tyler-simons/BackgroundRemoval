@@ -12,6 +12,7 @@ st.write(
 )
 st.sidebar.write("## Upload and download :gear:")
 
+MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
 
 # Download the fixed image
 def convert_image(img):
@@ -38,5 +39,7 @@ my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpe
 
 if my_upload is not None:
     fix_image(upload=my_upload)
+elif my_upload.size > MAX_FILE_SIZE:
+    st.error("The uploaded file is too large. Please upload an image smaller than 5MB.")
 else:
     fix_image("./zebra.jpg")
