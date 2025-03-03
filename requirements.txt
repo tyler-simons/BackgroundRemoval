@@ -1,8 +1,7 @@
-rembg==2.0.63
+rembg==2.0.50
 Pillow== 11.1.0
 streamlit==1.42.2
 # numba==0.57
 # numpy==1.23.0
 # python-multipart==0.0.6
 # watchdog==3.0.0
-onnxruntime==1.20.1
