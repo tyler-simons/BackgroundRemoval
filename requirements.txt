@@ -1,4 +1,4 @@
-rembg==2.0.50
+rembg==2.0.55
 Pillow== 11.1.0
 streamlit==1.42.2
 # numba==0.57
